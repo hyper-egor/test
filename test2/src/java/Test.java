@@ -17,8 +17,5 @@ public class Test {
             
             fgh
             
-            ggg 2
-            sdf
-                    sdf
-                    sdf
+            // Refactored
 }
