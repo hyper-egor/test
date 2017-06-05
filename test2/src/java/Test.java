@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import redis.clients.jedis.*;
 
-/**
- *
- * @author op
- */
 public class Test {
     
-    // TODO: !!!
-    2!
-    
-    dfh
-            
-            fgh
-            
-            // Refactored
+    public static void main(String[] sss)
+    {
+        Jedis redis = new Jedis("94.23.213.170", 6379);
+        
+        redis.set("Yoba", "Some text!");
+        redis.set("Yoba", "Some text 2!");
+        
+        redis.incr("bobo");
+        
+        
+        
+        System.out.println("---------- Yoba - " + redis.get("Yoba"));
+        System.out.println("---------- bobo - " + redis.get("bobo"));
+        
+    }
+                            
 }
